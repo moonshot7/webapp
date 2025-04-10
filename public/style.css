@@ -1,0 +1,116 @@
+/* Style général pour tout le site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Conteneur central pour les pages */
+  .container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titre principal */
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Formulaires */
+  input[type="text"],
+  input[type="password"],
+  button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  /* Couleur des boutons */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Liens */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pour les messages d'erreur ou de succès */
+  h3 {
+    text-align: center;
+    color: #d9534f;
+  }
+  
+  h3 a {
+    color: #007bff;
+  }
+  
+  /* Pour les pages de formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styles spécifiques pour la page de login */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Styles spécifiques pour la page d'inscription */
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .register-container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Styles pour la page d'accueil */
+  .home-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .home-container h2 {
+    color: #333;
+  }
+  
+  .home-container p {
+    font-size: 18px;
+    color: #555;
+  }
+  
