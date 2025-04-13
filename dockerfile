@@ -1,21 +1,12 @@
-FROM node:20-slim
-
-RUN groupadd -r appuser && useradd -r -g appuser appuser
+FROM node:20
 
 WORKDIR /app
 
 COPY package*.json ./
-
-RUN npm install --omit=dev && \
-
-    npm cache clean --force
+RUN npm install
 
 COPY . .
 
-RUN chown -R appuser:appuser /app
-
-USER appuser
-
 EXPOSE 3000
 
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
